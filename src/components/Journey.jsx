@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 
-const Experience = () => {
+const Journey = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <Typography variant="h2" component="h1" className="text-[#a9bbc9]">
@@ -11,4 +11,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Journey;

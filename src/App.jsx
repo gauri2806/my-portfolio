@@ -4,7 +4,7 @@ import {Box} from '@mui/material'
 import Navbar from './components/Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
 import About from './components/About.jsx'
-import Experience from './components/Experience.jsx'
+import Journey from './components/Journey.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/journey" element={<Journey />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
