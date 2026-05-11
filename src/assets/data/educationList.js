@@ -1,7 +1,7 @@
 const educationList=[
     {
         id:1,
-        img_src:"src/assets/images/SGGSLogo.jpeg",
+        img_src:"/assets/images/SGGSLogo.jpeg",
         name:"Shri Guru Gobind Singhji Institute of Engg & Tech",
         course:"BTech in Computer Science and Engineering",
         result:"CGPA: 8.28 / 10",
@@ -10,7 +10,7 @@ const educationList=[
     },
     {
         id:2,
-        img_src:"src/assets/images/SCJCLogo.png",
+        img_src:"/assets/images/SCJCLogo.png",
         name:"Sri Chaitanya Junior College",
         course:"Higher Secondary Certificate",
         result:"Percentage: 96.40%",
@@ -19,7 +19,7 @@ const educationList=[
     },
     {
         id:3,
-        img_src:"src/assets/images/SSRVMLogo.jpeg",
+        img_src:"/assets/images/SSRVMLogo.jpeg",
         name:"Sri Sri Ravishankar Vidya Mandir",
         course:"Secondary School Certificate",
         result:"Percentage: 94.80%",

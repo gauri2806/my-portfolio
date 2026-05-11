@@ -23,7 +23,7 @@ const Journey = () => {
 
 
         <Box className="flex flex-col items-center justify-center gap-5">
-          <Typography variant='h5'>Schools I went to</Typography>
+          <Typography variant='h5'>Educational Background</Typography>
           <Box className="w-full flex flex-col gap-5 items-center justify-center">
             {
               educationList.map((education) => {

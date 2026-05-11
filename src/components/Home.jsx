@@ -10,7 +10,7 @@ const Home = () => {
     <Box className="flex flex-col items-center px-4 md:px-6 my-10">
 
       <img
-        src="src/assets/images/profile-picture-2.jpeg"
+        src="/assets/images/profile-picture-2.jpeg"
         alt="Profile"
         className="size-40 md:size-80 rounded-full shadow-2xl shadow-black/40 ring-2 ring-[#7f95aa]/60 ring-offset-2 ring-offset-[#0f1720] transition hover:ring-[#b7c9d8]"
       />

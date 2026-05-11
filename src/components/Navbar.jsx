@@ -55,7 +55,7 @@ const Navbar = () => {
             `}
           >
             <img
-              src="src/assets/images/profile-picture-2.jpeg"
+              src="/assets/images/profile-picture-2.jpeg"
               alt="Profile"
               className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover"
             />
