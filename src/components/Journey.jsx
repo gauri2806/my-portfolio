@@ -2,8 +2,8 @@ import React from 'react';
 import { Typography, Box } from '@mui/material';
 import ExperienceCard from './ExperienceCard';
 import EducationCard from './EducationCard';
-import educationList from '../assets/data/educationList';
-import experienceList from '../assets/data/experienceList';
+import educationList from '../data/educationList';
+import experienceList from '../data/experienceList';
 
 const Journey = () => {
 

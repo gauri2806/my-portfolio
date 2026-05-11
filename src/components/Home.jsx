@@ -26,7 +26,7 @@ const Home = () => {
           className='!rounded-xl !bg-light-card hover:!bg-primary-text !text-dark-text normal-case !py-2.5 !shadow-none !font-medium'
         >Explore My Work <KeyboardDoubleArrowRightIcon fontSize='small' className='ml-1' /></Button>
         <Button variant='contained' sx={{ textTransform: 'none' }} component='a'
-          href='src/assets/documents/Gauri_Katti_Resume.pdf' download="Gauri_Katti_Resume"
+          href='/assets/documents/Gauri_Katti_Resume.pdf' download="Gauri_Katti_Resume"
           className='!rounded-xl !bg-light-card hover:!bg-primary-text !text-dark-text normal-case !py-2.5 !shadow-none !font-medium'
         ><GetAppIcon fontSize='small' className='mr-1' /> Resume</Button>
       </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Avatar, ListItemText, ListItemIcon, List, ListItem } from '@mui/material';
 import SkillCard from './SkillCard';
-import skillsData from '../assets/data/skillsData';
+import skillsData from '../data/skillsData';
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
 
