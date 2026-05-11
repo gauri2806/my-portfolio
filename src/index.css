@@ -1,5 +1,24 @@
 @import "tailwindcss";
-body{
-    margin: 0;
-    padding: 0;
+
+@theme {
+  --color-small-dark-card-bg: #1e293b;
+
+  --color-primary-text: #dce6ee;
+  --color-heading-text: #f8fafc;
+
+  --color-muted-text: #94a3b8;
+  --color-muted-dark-text: #6b7280;
+
+  --color-dark-text: #374151;
+
+  --color-light-card: #d4dae2;
+  --color-dark-card: #1b2635;
+
+  --color-light-border: #dbe3ec;
+  --color-dark-border: rgba(127,149,170,0.2);
+
+  --color-input-bg: #334155;
+  --color-input-border: #475569;
+  --color-input-hover: #64748b;
+  --color-input-focus: #cbd5e1;
 }

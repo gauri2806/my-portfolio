@@ -9,23 +9,24 @@ import {
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [state, handleSubmit, reser] = useForm("mqengzoa");
+  const [state, handleSubmit] = useForm("mqengzoa");
 
   return (
-    <Box className="min-h-screen px-6 md:px-20 py-20 bg-[#0f1720] text-[#dce6ee]">
+    <Box className="min-h-screen px-6 md:px-20 py-20 bg-[#0f1720] text-primary-text">
 
       {/* Heading */}
-      <Box className="flex flex-col items-center text-center gap-4 mb-15">
+      <Box className="flex flex-col items-center text-center gap-4 mb-8 md:mb-15">
+
         <Typography
           variant="h3"
-          className="font-bold text-[#dce6ee]"
+          className="font-bold text-primary-text"
         >
           Let’s Build Something Together
         </Typography>
 
         <Typography
           variant="body1"
-          className="text-[#94a3b8] max-w-2xl"
+          className="text-muted-text max-w-2xl"
         >
           Have a question, idea, or project in mind? Feel free to reach out.
           I’d love to hear from you and create something meaningful together.
@@ -33,61 +34,65 @@ const Contact = () => {
       </Box>
 
       {/* Main Section */}
-      <Box className="flex flex-col lg:flex-row gap-10 justify-between items-start">
+      <Box className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
 
         {/* Left Side */}
         <Box className="flex flex-col gap-6 w-full lg:w-1/3">
 
           <Typography
             variant="h5"
-            className="place-self-center text-[#f8fafc]"
+            className="place-self-center text-heading-text"
           >
             You'll find me at
           </Typography>
 
           {/* Location */}
-          <Card className="p-5 rounded-3xl shadow-md border border-[#dbe3ec] bg-[#d4dae2]">
+          <Card className="p-5 rounded-3xl shadow-md border border-light-border bg-light-card">
+
             <Typography
               variant="h6"
-              className="font-semibold text-[#374151] mb-2"
+              className="font-semibold text-dark-text mb-2"
             >
               📍 Location
             </Typography>
 
-            <Typography className="text-[#6b7280]">
+            <Typography className="text-muted-dark-text">
               Pune, Maharashtra, India
             </Typography>
           </Card>
 
           {/* Email */}
-          <Card className="p-5 rounded-3xl shadow-md border border-[#dbe3ec] bg-[#d4dae2]">
+          <Card className="p-5 rounded-3xl shadow-md border border-light-border bg-light-card">
+
             <Typography
               variant="h6"
-              className="font-semibold text-[#374151] mb-2"
+              className="font-semibold text-dark-text mb-2"
             >
               📧 Email
             </Typography>
 
-            <Typography className="text-[#6b7280]">
+            <Typography className="text-muted-dark-text">
               gaurikatti2806@gmail.com
             </Typography>
           </Card>
 
           {/* Socials */}
-          <Card className="p-5 rounded-3xl shadow-md border border-[#dbe3ec] bg-[#d4dae2]">
+          <Card className="p-5 rounded-3xl shadow-md border border-light-border bg-light-card">
+
             <Typography
               variant="h6"
-              className="font-semibold text-[#374151] mb-4"
+              className="font-semibold text-dark-text mb-4"
             >
               🌐 Socials
             </Typography>
 
-            <Box className="flex gap-3 text-[#6b7280]">
+            <Box className="flex gap-3 text-muted-dark-text">
+
               <a
                 href="https://www.linkedin.com/in/gauri-katti-099370210/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-[#0f1720] transition"
+                className="hover:text-dark-text transition"
               >
                 LinkedIn
               </a>
@@ -96,7 +101,7 @@ const Contact = () => {
                 href="https://github.com/gauri2806"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-[#0f1720] transition"
+                className="hover:text-dark-text transition"
               >
                 GitHub
               </a>
@@ -105,34 +110,45 @@ const Contact = () => {
                 href="https://www.instagram.com/__gauri_28_/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-[#0f1720] transition"
+                className="hover:text-dark-text transition"
               >
                 Instagram
               </a>
             </Box>
           </Card>
 
-          {/* Contact Number */}
-          <Card className="p-5 rounded-3xl shadow-md border border-[#dbe3ec] bg-[#d4dae2]">
+          {/* Phone */}
+          <Card className="p-5 rounded-3xl shadow-md border border-light-border bg-light-card">
+
             <Typography
               variant="h6"
-              className="font-semibold text-[#374151] mb-2"
+              className="font-semibold text-dark-text mb-2"
             >
               📞 Phone
             </Typography>
 
-            <Typography className="text-[#6b7280]">
+            <Typography className="text-muted-dark-text">
               +91 80803 24256
             </Typography>
           </Card>
         </Box>
 
         {/* Contact Form */}
-        <Card className="w-full lg:w-2/3 p-8 rounded-[32px] border border-[rgba(127,149,170,0.2)] shadow-xl shadow-black/5 bg-[#1b2635] mt-10">
+        <Card
+          className="
+            w-full lg:w-2/3
+            p-4 md:p-8
+            rounded-[32px]
+            border
+            border-dark-border
+            shadow-xl shadow-black/5
+            bg-dark-card
+          "
+        >
 
           <Typography
             variant="h5"
-            className="font-semibold text-[#f3f4f6] mb-8 text-center"
+            className="font-semibold text-heading-text mb-8 text-center"
           >
             Send me a message
           </Typography>
@@ -140,48 +156,53 @@ const Contact = () => {
           <Box
             component="form"
             onSubmit={handleSubmit}
-            className="flex flex-col gap-6 w-full justify-center items-center"
+            className="flex flex-col gap-4 md:gap-6 w-full justify-center items-center"
             sx={{
               "& .MuiOutlinedInput-root": {
-                backgroundColor: "#334155",
+                backgroundColor: "var(--color-input-bg)",
                 borderRadius: "12px",
-                color: "#f8fafc",
+                color: "var(--color-heading-text)",
 
                 "& fieldset": {
-                  borderColor: "#475569",
+                  borderColor: "var(--color-input-border)",
                 },
 
                 "&:hover fieldset": {
-                  borderColor: "#64748b",
+                  borderColor: "var(--color-input-hover)",
                 },
 
                 "&.Mui-focused fieldset": {
-                  borderColor: "#cbd5e1",
+                  borderColor: "var(--color-input-focus)",
                 },
 
                 "& input": {
-                  color: "#f8fafc",
+                  color: "var(--color-heading-text)",
                 },
 
                 "& textarea": {
-                  color: "#f8fafc",
+                  color: "var(--color-heading-text)",
                 },
 
-                // Autofill Fix
                 "& input:-webkit-autofill": {
-                  WebkitBoxShadow: "0 0 0 100px #334155 inset",
-                  WebkitTextFillColor: "#f8fafc",
-                  caretColor: "#f8fafc",
+                  WebkitBoxShadow:
+                    "0 0 0 100px var(--color-input-bg) inset",
+
+                  WebkitTextFillColor:
+                    "var(--color-heading-text)",
+
+                  caretColor:
+                    "var(--color-heading-text)",
+
                   borderRadius: "12px",
                 },
               },
 
               "& .MuiInputLabel-root": {
-                color: "#94a3b8",
+                color: "var(--color-muted-text)",
               },
 
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "#cbd5e1",
+                color: "var(--color-input-focus)",
               },
             }}
           >
@@ -243,7 +264,17 @@ const Contact = () => {
               variant="contained"
               type="submit"
               disabled={state.submitting}
-              className="!mt-4 !py-3 !rounded-md w-fit"
+              className="
+                !mt-4
+                !py-2 md:!py-3
+                !px-4 md:!px-6
+                !rounded-xl
+                !bg-light-card
+                hover:!bg-primary-text
+                !text-dark-text
+                !shadow-none
+                !font-medium
+              "
             >
               {state.submitting ? "Sending..." : "Send Message"}
             </Button>

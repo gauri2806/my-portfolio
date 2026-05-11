@@ -10,7 +10,6 @@ import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
-
   return (
     <>
       <Box className="bg-[#0f1720] text-[#dce6ee]">

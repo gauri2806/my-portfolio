@@ -1,22 +1,36 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
+import { Typography, Box, Button } from '@mui/material';
+import GetAppIcon from '@mui/icons-material/GetApp';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6">
+    <Box className="flex flex-col items-center px-4 md:px-6 my-10">
 
       <img
-        src="src/assets/images/profile-picture.jpeg"
+        src="src/assets/images/profile-picture-2.jpeg"
         alt="Profile"
-        className="w-48 h-48 rounded-full shadow-2xl shadow-black/40 ring-4 ring-[#7f95aa] ring-offset-8 ring-offset-[#0f1720]"
+        className="size-40 md:size-80 rounded-full shadow-2xl shadow-black/40 ring-2 ring-[#7f95aa]/60 ring-offset-2 ring-offset-[#0f1720] transition hover:ring-[#b7c9d8]"
       />
-      <Typography variant="h2" component="h1" gutterBottom className="text-center text-[#f5f8fb] mt-10">
-        Welcome to My Portfolio
+      <Typography variant="h2" component="h1" gutterBottom className="text-center font-semibold text-heading-text mt-10">
+        Hi, I'm Gauri Katti
       </Typography>
-      <Typography variant="h5" component="h2" className="text-center mb-8 text-[#a9bbc9]">
-        Crafting beautiful web experiences with React and Tailwind CSS
+      <Typography variant="h5" component="h2" className="text-center mb-8 text-[#a9bbc9] w-full md:w-1/2">
+        Full-stack developer and UI/UX designer building modern, scalable applications with exceptional user experiences.
       </Typography>
-    </div>
+      <Box className='flex gap-5'>
+        <Button variant='contained' sx={{ textTransform: 'none' }}
+          onClick={() => navigate("./projects")}
+          className='!rounded-xl !bg-light-card hover:!bg-primary-text !text-dark-text normal-case !py-2.5 !shadow-none !font-medium'
+        >Explore My Work <KeyboardDoubleArrowRightIcon fontSize='small' className='ml-1' /></Button>
+        <Button variant='contained' sx={{ textTransform: 'none' }} component='a'
+          href='src/assets/documents/Gauri_Katti_Resume.pdf' download="Gauri_Katti_Resume"
+          className='!rounded-xl !bg-light-card hover:!bg-primary-text !text-dark-text normal-case !py-2.5 !shadow-none !font-medium'
+        ><GetAppIcon fontSize='small' className='mr-1' /> Resume</Button>
+      </Box>
+    </Box>
   );
 }
 

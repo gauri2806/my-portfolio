@@ -25,15 +25,15 @@ const ProjectCard = ({ repo }) => {
   return (
     <Card
       className="
-        w-80 min-h-[260px]
+        w-full max-w-sm
         rounded-3xl
         transition-all duration-300
         hover:-translate-y-2
         flex flex-col justify-between
         border
-        bg-[#1e293b]
-        border-[#334155]
-        hover:border-[#475569]
+        bg-small-dark-card-bg
+        border-input-border
+        hover:border-input-hover
         shadow-lg shadow-black/10
       "
     >
@@ -44,7 +44,7 @@ const ProjectCard = ({ repo }) => {
           variant="h5"
           className="
             font-semibold
-            text-[#f8fafc]
+            text-heading-text
             break-words
             tracking-wide
           "
@@ -56,7 +56,7 @@ const ProjectCard = ({ repo }) => {
         <Typography
           variant="body2"
           className="
-            text-[#94a3b8]
+            text-muted-text
             mt-4
             line-clamp-4
             leading-7
@@ -78,9 +78,9 @@ const ProjectCard = ({ repo }) => {
             endIcon={<LaunchIcon />}
             className="
               !rounded-xl
-              !bg-[#e2e8f0]
-              hover:!bg-[#cbd5e1]
-              !text-[#0f172a]
+              !bg-light-card
+              hover:!bg-primary-text
+              !text-dark-text
               normal-case
               !py-2.5
               !shadow-none
@@ -98,10 +98,10 @@ const ProjectCard = ({ repo }) => {
             onClick={handleShare}
             className="
               !rounded-xl
-              !border-[#475569]
-              !text-[#cbd5e1]
-              hover:!bg-[#334155]
-              hover:!border-[#64748b]
+              !border-input-border
+              !text-primary-text
+              hover:!bg-input-bg
+              hover:!border-input-hover
               normal-case
               !py-2.5
             "
