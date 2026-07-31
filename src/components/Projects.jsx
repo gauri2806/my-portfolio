@@ -37,6 +37,7 @@ const Projects = () => {
   return (
     <>
       <Box className="flex flex-col justify-center">
+        <Typography variant='h5' className='self-center text-primary-text'>My Work</Typography>
         <Box
           className="w-full flex flex-wrap justify-center gap-8 px-6 py-10"
         >

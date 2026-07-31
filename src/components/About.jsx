@@ -16,7 +16,7 @@ const About = () => {
     "Code refactoring and performance optimization",
     "Debugging and issue resolution using Chrome DevTools & Postman",
     "Version control and collaborative development with Git & GitHub",
-    "AI-assisted development using ChatGPT, Claude & GitHub Copilot",
+    "AI-assisted development using Claude & GitHub Copilot",
   ];
 
   return (
@@ -24,7 +24,7 @@ const About = () => {
       <Box>
         <Box className="flex flex-col items-center gap-5 m-5 justify-center">
           <Typography variant='h4'>Building Digital Solutions</Typography>
-          <Typography variant='h6' className='w-full md:w-1/2 text-center text-muted-dark-text'>Full-stack developer passionate about creating modern, scalable applications with exceptional user experiences.</Typography>
+          <Typography variant='h6' className='w-full md:w-1/2 text-center text-muted-dark-text'>Software developer passionate about creating modern, scalable applications with exceptional user experiences.</Typography>
         </Box>
         <Box className='flex flex-col md:flex-row p-5 md:p-10'>
           <Box className='w-full md:w-1/2 px-15 flex flex-col gap-10'>

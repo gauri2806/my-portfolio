@@ -1,24 +1,22 @@
-import React from 'react';
+import { useCallback } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useNavigate, useLocation } from 'react-router-dom';
 
-const Navbar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+const navItems = [
+  { label: 'About', targetId: 'about' },
+  { label: 'Journey', targetId: 'journey' },
+  { label: 'Projects', targetId: 'projects' },
+  { label: 'Contact', targetId: 'contact' },
+];
 
-  const navItems = [
-    { label: 'About', path: '/about' },
-    { label: 'Journey', path: '/journey' },
-    { label: 'Projects', path: '/projects' },
-    { label: 'Contact', path: '/contact' },
-  ];
+const Navbar = ({handleScroll}) => {
+
 
   return (
     <Box className="w-full flex justify-center px-4 mt-4">
       <AppBar
-        position="static"
+        position="fixed"
         elevation={0}
         className="
           w-full
@@ -34,15 +32,18 @@ const Navbar = () => {
         sx={{
           backgroundColor: 'rgba(18, 28, 38, 0.84)',
           backdropFilter: 'blur(18px)',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          top: '1rem'
         }}
       >
         <Box className="flex items-center justify-between w-full">
-          
-          {/* Profile */}
+
+          {/* Profile - Scrolls to Home */}
           <button
             type="button"
-            onClick={() => navigate('/')}
-            className={`
+            onClick={() => handleScroll('home')}
+            className="
               cursor-pointer
               rounded-full
               ring-2
@@ -51,8 +52,7 @@ const Navbar = () => {
               ring-offset-[#0f1720]
               transition
               hover:ring-[#b7c9d8]
-              ${location.pathname === '/' ? 'ring-[#b7c9d8]' : ''}
-            `}
+            "
           >
             <img
               src="/assets/images/profile-picture-2.jpeg"
@@ -64,24 +64,21 @@ const Navbar = () => {
           {/* Nav Items */}
           <Box className="flex items-center justify-center flex-1 ml-2 md:ml-6 gap-1 md:gap-2">
             {navItems.map((item) => {
-              const isActive = location.pathname === item.path;
-
               return (
                 <Button
-                  key={item.path}
-                  onClick={() => navigate(item.path)}
-                  className={`
+                  key={item.targetId}
+                  onClick={() => handleScroll(item.targetId)}
+                  className="
                     rounded-full!
                     px-2! md:px-4!
                     py-1! md:py-2!
                     min-w-fit!
                     text-xs! md:text-sm!
                     transition
-                    ${isActive
-                      ? 'bg-[#263746]! text-[#f5f8fb]!'
-                      : 'text-[#dce6ee] hover:bg-[#263746] hover:text-[#f5f8fb]'
-                    }
-                  `}
+                    text-[#dce6ee] 
+                    hover:bg-[#263746] 
+                    hover:text-[#f5f8fb]
+                  "
                 >
                   {item.label}
                 </Button>

@@ -12,7 +12,7 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("mqengzoa");
 
   return (
-    <Box className="min-h-screen px-6 md:px-20 py-20 bg-[#0f1720] text-primary-text">
+    <Box className="min-h-screen px-6 md:px-20 pb-20 bg-[#0f1720] text-primary-text">
 
       {/* Heading */}
       <Box className="flex flex-col items-center text-center gap-4 mb-8 md:mb-15">

@@ -1,7 +1,6 @@
 import { Card, Box, Typography } from "@mui/material"
 
 export default function ExperienceCard({experience}){
-    console.log(experience)
     return (
         <>
             <Card className="w-full md:w-2/3 p-4 md:p-8 rounded-2xl border border-dark-border shadow-xl shadow-black/5 bg-dark-card flex flex-col md:flex-row gap-4 md:gap-8">

@@ -7,7 +7,7 @@ export default function SkillCard({skillSection}){
                     {skillSection.title}
                 </Typography>
                 <Box variant="body1" className="text-muted-text flex gap-4 mt-3 flex-wrap">
-                    {skillSection.skills.map((skill)=><Stack>{skill}</Stack>)}
+                    {skillSection.skills.map((skill)=><Stack key={skill}>{skill}</Stack>)}
                 </Box>
             </Card>
         </>

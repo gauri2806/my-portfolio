@@ -68,7 +68,6 @@ const skillsData = [
     id: 7,
     title: "Core Strengths",
     skills: [
-      "Code Refactoring",
       "Performance Optimization",
       "Debugging & Troubleshooting",
       "Clean Code Practices",
