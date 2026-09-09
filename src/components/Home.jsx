@@ -42,7 +42,7 @@ const Home = ({ handleScroll }) => {
             </Button>
 
             <Button variant='outlined' className="!border-input-border !text-primary-text hover:!bg-input-bg hover:!border-input-hover normal-case"
-              component='a' href='/assets/documents/GauriKattiResume.pdf' download="GauriKattiResume">
+              component='a' href='/assets/documents/GauriKResume.pdf' download="GauriKattiResume">
               <GetAppIcon fontSize='small' />
             </Button>
           </ButtonGroup>
