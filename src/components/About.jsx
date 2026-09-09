@@ -33,10 +33,13 @@ const About = () => {
                 A brief summary about me
               </Typography>
               <Typography className='body1 text-muted-text'>
-                Software Development Engineer with 2+ years of experience in developing and maintaining scalable web applications with a strong focus on clean architecture, performance, and code quality. Skilled in frontend technologies including HTML5, CSS3, Tailwind CSS, Material UI, React Bootstrap, and React.js, along with concepts such as component-based design, React Hooks, Context API, Custom Hooks, Zustand, and lazy loading. Experienced in integrating REST APIs, working with Axios, OpenAI APIs, and backend technologies like Node.js and Express.js.
+                I’m a Frontend Engineer with professional experience building and maintaining enterprise-grade web applications using React.js, JavaScript, TypeScript and modern state-management patterns.
+              </Typography>
+              <Typography className='body1 text-muted-text'>
+                Currently, I work on Siemens Teamcenter Active Workspace, where I develop new features, refactor legacy frontend code, troubleshoot production issues and improve application reliability and maintainability.
               </Typography>
               <Typography className='body-1 text-muted-text'>
-                In my current role, I have significantly contributed to improving application quality and maintainability by increasing the Jest code coverage of our module by 27% through comprehensive unit testing. I have also written multiple Cucumber step definitions using Gherkin for automation testing and actively participated in code refactoring tasks such as removing unnecessary event publishers and handling batch job calls efficiently. Additionally, I worked on resolving Coverity issues and successfully reduced the module’s issue count to zero, ensuring better code reliability and adherence to quality standards.
+                I’m particularly interested in frontend architecture, performance optimization, reusable component design, testing and creating intuitive user experiences.
               </Typography>
 
             </Box>

@@ -1,80 +1,71 @@
 const skillsData = [
   {
     id: 1,
-    title: "Frontend Development",
+    title: "Frontend",
     skills: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
       "Material UI",
-      "React.js",
-      "React Bootstrap",
+      "React Bootstrap"
     ],
   },
   {
     id: 2,
-    title: "React Ecosystem",
+    title: "React & State Management",
     skills: [
       "React Hooks",
       "Context API",
-      "Custom Hooks",
       "Zustand",
-      "Lazy Loading",
-      "Component-Based Design",
+      "Redux",
+      "Custom Hooks",
+      "Lazy Loading"
     ],
   },
   {
     id: 3,
-    title: "Backend & APIs",
+    title: "Testing",
     skills: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "Axios",
-      "OpenAI API",
+      "Jest",
+      "React Testing Library",
     ],
   },
   {
     id: 4,
-    title: "Testing & Automation",
+    title: "APIs & Tools",
     skills: [
-      "Jest",
-      "React Testing Library",
-      "Cucumber.js",
-      "Gherkin",
-      "Assert Library",
+      "REST APIs",
+      "Axios",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Chrome DevTools"
     ],
   },
   {
     id: 5,
-    title: "Developer Tools",
+    title: "AI / Developer Tools",
     skills: [
-      "Git",
-      "GitHub",
-      "Postman",
-      "Chrome DevTools",
+      "OpenAI API",
+      "OpenRouter API",
+      "GitHub Copilot",
+      "ChatGPT",
+      "Claude"
     ],
   },
   {
     id: 6,
-    title: "AI & Productivity Tools",
+    title: "Currently exploring",
     skills: [
-      "ChatGPT",
-      "Claude",
-      "GitHub Copilot",
+      "Next.js",
+      "AI-powered frontend development",
+      "Frontend performance",
+      "Modern React patterns"
     ],
-  },
-  {
-    id: 7,
-    title: "Core Strengths",
-    skills: [
-      "Performance Optimization",
-      "Debugging & Troubleshooting",
-      "Clean Code Practices",
-      "Responsive UI Development",
-      "Problem Solving",
-    ],
-  },
+  }
 ];
 
 export default skillsData;

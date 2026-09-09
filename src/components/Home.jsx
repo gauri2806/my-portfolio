@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Typography, Box, Button, ButtonGroup, Modal } from '@mui/material';
 import GetAppIcon from '@mui/icons-material/GetApp';
-import VisibilityIcon from '@mui/icons-material/Visibility';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import { useNavigate } from 'react-router-dom';
 
 const Home = ({ handleScroll }) => {
   const [openResume, setOpenResume] = useState(false);
@@ -25,8 +23,11 @@ const Home = ({ handleScroll }) => {
         <Typography variant="h2" component="h1" gutterBottom className="text-center font-semibold text-heading-text mt-10">
           Hi, I'm Gauri Katti
         </Typography>
+        <Typography variant="h5" component="h2" className="text-center mb-8 text-[#a9bbc9] w-full md:w-1/2 font-semibold">
+          Frontend Engineer | React.js | TypeScript
+        </Typography>
         <Typography variant="h5" component="h2" className="text-center mb-8 text-[#a9bbc9] w-full md:w-1/2">
-          Full-stack developer and UI/UX designer building modern, scalable applications with exceptional user experiences.
+          Building scalable, accessible and high-performance user interfaces with React.js and modern frontend technologies.
         </Typography>
         <Box className='flex gap-5'>
           <Button variant='contained' sx={{ textTransform: 'none' }}
