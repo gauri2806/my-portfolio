@@ -43,7 +43,7 @@ const Home = ({ handleScroll }) => {
             </Button>
 
             <Button variant='outlined' className="!border-input-border !text-primary-text hover:!bg-input-bg hover:!border-input-hover normal-case"
-              component='a' href='/assets/documents/GauriKResume.pdf' download="GauriKattiResume">
+              component='a' href='/assets/documents/GauriResume.pdf' download="GauriKattiResume">
               <GetAppIcon fontSize='small' />
             </Button>
           </ButtonGroup>
@@ -57,7 +57,7 @@ const Home = ({ handleScroll }) => {
       >
         <Box
           component="iframe"
-          src="/assets/documents/GauriKattiResume.pdf"
+          src="/assets/documents/GauriResume.pdf"
           title="Gauri Katti Resume"
           className="w-11/12 md:w-3/4 h-[600px] mt-8 rounded-lg shadow-xl border-none"
         />
